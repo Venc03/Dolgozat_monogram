@@ -1,0 +1,22 @@
+:root {
+    --maxSzelesseg: 300px;
+    --szelesseg: calc((var(--maxSzelesseg) - 10px) / 3);
+}
+* {
+    box-sizing: border-box;
+}
+main {
+    width: var(--maxSzelesseg);
+    margin: auto;
+}
+
+article {
+    display: grid;
+    grid-template-columns: var(--szelesseg) var(--szelesseg) var(--szelesseg);
+    grid-template-rows: var(--szelesseg) var(--szelesseg) var(--szelesseg);
+    grid-gap: 5px;
+}
+
+footer {
+    text-align: center;
+}
